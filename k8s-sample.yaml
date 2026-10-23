@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-pod
+  labels:
+    app: webapp
+spec:
+  containers:
+    - name: webapp
+      image: webapp:latest
+      ports:
+        - containerPort: 80
+
+        # edited by Isma Sajid
+
